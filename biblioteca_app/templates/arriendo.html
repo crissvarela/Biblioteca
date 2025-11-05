@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% block body %}
+<div class="container mt-4">
+<h2>Arrendar Libro</h2>
+<p>Selecciona un libro para arrendar:</p>
+<ul class="list-group">
+{% for l in libros %}
+<li class="list-group-item">{{l.titulo}} - {{l.autor}}</li>
+{% endfor %}
+</ul>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block body %}
+<div class="container mt-4">
+<h2>Libros Disponibles</h2>
+<table class="table table-striped">
+<thead><tr><th>Título</th><th>Autor</th></tr></thead>
+<tbody>
+{% for l in libros %}
+<tr><td>{{l.titulo}}</td><td>{{l.autor}}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% endblock %}
